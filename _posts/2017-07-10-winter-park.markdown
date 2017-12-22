@@ -1,8 +1,0 @@
----
-layout: post
-title: Winter Park
-date: 2017-07-10 20:49:00
-thumbnail: WinterPark.jpg
----
-
-

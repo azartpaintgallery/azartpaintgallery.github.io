@@ -7,6 +7,8 @@
   <link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
   <link href="/assets/css/jekyllthemes.css" rel="stylesheet" />
   <link href="/assets/css/syntax.css" rel="stylesheet" />
+
+
 </head>
 
 
@@ -14,14 +16,24 @@
 
 
 
-
+{% assign base = '' %}
 
   <header id="header">
     <div class="wrap">
 
       <h1 id="logo"><a href="/">{{ site.name }}</a></h1>
-
+	<center>
+		 <img src="{{ site.url }}/assets/GAL1.jpg" alt="Welcome" height="100" width="100"></img>	
+	</center>
     </div>
+<nav class="main-nav">
+	<p align="center">
+  
+    <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Portfolio</a>
+    <a href="/about/" {% if page.url == "/about/" %}class="active"{% endif %}>About</a>
+  
+	</p>
+</nav>
   </header>
 
 
@@ -53,16 +65,7 @@
 
 
 
-  <footer id="footer">
-    <div class="container">
-      <div class="row">
-
-        
-
-
-      </div>
-    </div>
-  </footer>
+ 
 
 
 

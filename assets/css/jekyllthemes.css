@@ -7913,7 +7913,7 @@ a.badge:focus {
 }
 html,
 body {
-  background-color: #eeeeee;
+  background-color: #8c8c8c;
 }
 code {
   color: #000;
@@ -7922,7 +7922,7 @@ code {
   margin-top: 20px;
 }
 #header {
-  height: 58px;
+  height: 175px;
   background-image: url(../img/darkdenim3.png);
   border-bottom: 2px solid #000;
 }
@@ -8059,4 +8059,8 @@ code {
     margin-right: -20px;
     padding: 10px;
   }
+}
+
+a.active {
+  color: #FFE000;
 }

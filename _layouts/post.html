@@ -2,6 +2,33 @@
 layout: default
 ---
 
+<p align="center" >
+  <img src="/large/{{ page.thumbnail }}"  style="max-width: 100%;
+    max-height: 60vh;
+    height: auto;"/>
+</p>
+
+
 <p align="center">
-  <img src="/large/{{ page.thumbnail }}" />
+{% if page.next %}
+
+  <a href="{{ page.next.url }}" style=" color:#ffe000;">&lt Previous</a>
+
+{% else %}
+
+  <a href="" style="visibility: hidden;  color:#ffe000;"">&lt Previous</a>
+
+
+{% endif %}
+|
+{% if page.previous %}
+
+  <a href="{{ page.previous.url }}" style=" color:#ffe000;">Next &gt</a>
+
+{% else %}
+
+  <a href="" style="visibility: hidden; color:#ffe000;">Next &gt</a>
+
+
+{% endif %}
 </p>
